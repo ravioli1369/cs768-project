@@ -38,18 +38,11 @@ bash experiments/nosmog_cpf.sh
 ```
 
 
-To extend NOSMOG to your own model, you may do one of the following.
-- Add your favourite model architectures to the `Model` class in `model.py`. Then follow the examples above.
-- Train teacher model and store its output (log-probabilities). Then train the student by `train_student.py` with the correct `--out_t_path`.
 
 
 
 
-
-
-## Citing NOSMOG
-
-If you find NOSMOG useful, please cite our papers.
+## References - 
 ```
 @inproceedings{NOSMOG_ICLR,
     title={Learning {MLP}s on Graphs: A Unified View of Effectiveness, Robustness, and Efficiency},
