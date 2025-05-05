@@ -1,3 +1,6 @@
+For the CS768 project - Download the datasets at [this link](https://drive.google.com/drive/folders/1-l_q0ejh6IzHUYK9kHejWWcM8y_WCtOW?usp=sharing) and unzip them. Use the `temporal_to_npz` function in `temporal_dataloader.py` with proper arguments to convert the temporal graphs to `npz` files which the model uses. Then follow the instructions as below to run the model as needed. Check the config file before running an experiment.
+
+The below README is from the NOSMOG implementation found [here](https://github.com/meettyj/NOSMOG)
 
 # NOSMOG
 This repo contains code for the following two papers:
@@ -11,8 +14,6 @@ To run experiments for dataset used in the paper, please download from the follo
 - *CPF data* (`cora`, `citeseer`, `pubmed`, `a-computer`, and `a-photo`): Download the '.npz' files from [here](https://github.com/BUPT-GAMMA/CPF/tree/master/data/npz). Rename `amazon_electronics_computers.npz` and `amazon_electronics_photo.npz` to `a-computer.npz` and `a-photo.npz` respectively.
 
 - *OGB data* (`ogbn-arxiv` and `ogbn-products`): Datasets will be automatically downloaded when running the `load_data` function in `dataloader.py`. More details [here](https://ogb.stanford.edu/).
-
-For the CS768 project - Download the datasets at [this link](https://drive.google.com/drive/folders/1-l_q0ejh6IzHUYK9kHejWWcM8y_WCtOW?usp=sharing) and unzip them. Use the `temporal_to_npz` function in `temporal_dataloader.py` with proper arguments to convert the temporal graphs to `npz` files which the model uses. Then follow the instructions as below to run the model as needed. Check the config file before running an experiment.
 
 ## Usage
 To quickly train teacher models you can run `train_teacher.py` by specifying the experiment setting, i.e. transductive (`tran`) or inductive (`ind`), teacher model, e.g. `GCN`, and dataset, e.g. `cora`, as per the example below.
